@@ -1,0 +1,29 @@
+{
+  "name": "todo-app-ts",
+  "version": "1.0.0",
+  "description": "Pure TypeScript Todo list",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agonsant/todo-app-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agonsant/todo-app-ts/issues"
+  },
+  "homepage": "https://github.com/agonsant/todo-app-ts#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "http-server": "^0.12.3",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5"
+  }
+}

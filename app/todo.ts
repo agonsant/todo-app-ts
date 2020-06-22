@@ -1,18 +1,18 @@
 // Interface to define the structure of Todo
-interface ITodo{
+export interface ITodo{
     name:string;
     description: string;
     completed: boolean;
 }
 
 //Class Implementing the interface
-class Todo implements ITodo{
+export class Todo implements ITodo{
     constructor(public name: string, public description: string, public completed: boolean){}
 
 }
 
 // Class which contains list of Todos and the actions
-class TodoList{
+export class TodoList{
     public static allTodos: Todo[]= new Array;
 
     //Create a new Todo Item
@@ -35,11 +35,11 @@ window.onload = function(){
     let description = <HTMLInputElement>document.getElementById("todoDescription");
 
     // added a event listner for add click
-    document.getElementById("add").addEventListener('click',()=>toAlltask(task.value, description.value));    
+    document.getElementById("add")?.addEventListener('click',()=>toAlltask(task.value, description.value));    
 }
 
 //Function called when add is clicked
-function toAlltask(task:string, description:string){
+export function toAlltask(task:string, description:string){
 
     let todo = new TodoList();
     // adds the task to list
